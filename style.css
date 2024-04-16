@@ -1,0 +1,249 @@
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --font: 'Roboto', sans-serif;
+    --font-weight: 400;
+    --font-weight-bold: 700;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Charcoal-Grey);
+}
+.container{
+    height: 70%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: var(--White);
+}
+.left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 15px 25px;
+}
+.left h1{
+    color: var(--Dark-Slate-Grey);
+    font-size: 2.5em;
+    font-family: var(--font);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 15px;
+}
+.left p{
+    color: var(--Grey);
+    font-size: 14px;
+    font-family: var(--font);
+    font-weight: var(--font-weight);
+    margin-bottom: 20px;
+}
+.left ul li{
+    list-style: none;
+    color: var(--Grey);
+    font-size: 14px;
+    font-family: var(--font);
+    font-weight: var(--font-weight);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.left ul li img{
+    margin-right: 10px; 
+    height: 25px;
+    width: 15px;    
+
+}
+.left label{
+    color: var(--Dark-Slate-Grey);
+    font-size: 12px;
+    font-family: var(--font);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 10px;
+    display: block;
+    letter-spacing: -.5px;
+}
+.left input{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--Grey);
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.left button{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--Grey);
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-size: 15px;
+    font-family: var(--font);
+    font-weight: var(--font-weight);
+    margin-bottom: 10px;
+}
+.left button:hover{
+    background-color: var(--Tomato);
+    border: 1px solid var(--Tomato);
+    color: var(--White);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('./images/illustration-sign-up-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* border-radius: 0 20px 20px 0; */
+}
+.right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius:20px;
+}
+.success-message{
+    height: 50%;
+    width: 22%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+.success-message img{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+}
+.success-message h2{
+    color: var(--Dark-Slate-Grey);
+    font-size: 2.5em;
+    font-family: var(--font);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+.success-message p{
+    color: var(--Grey);
+    font-size: 12px;
+    font-family: var(--font);
+    font-weight: var(--font-weight);
+    margin-bottom: 30px;
+    /* width: 95%; */
+}
+.success-message .email{
+    color: var(--Dark-Slate-Grey);
+    font-size: 12px;
+    font-family: var(--font);
+    font-weight: var(--font-weight-bold);
+    /* margin-bottom: 10px; */
+    /* display: block; */
+    letter-spacing: -.5px;
+}
+.success-message button{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--Grey);
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-size: 15px;
+    font-family: var(--font);
+    font-weight: var(--font-weight);
+    margin-bottom: 10px;
+}
+.success-message button:hover{
+    background-color: var(--Tomato);
+    border: 1px solid var(--Tomato);
+    color: var(--White);
+    transition: .5s;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        height:90%;
+        width: 90%;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .left{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .left ul li img{
+        margin-right: 10px; 
+        height: 25px;
+        width: 15px;    
+    }
+    .left label{
+        font-size: 10px;
+    }
+    .left input{
+        height: 30px;
+        padding: 10px;
+    }
+    .left button{
+        height: 30px;
+        font-size: 10px;
+    }
+    .right{
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 20px 20px;
+    }
+    .right img{
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 100%;
+    }
+    .success-message{
+        height: 50%;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--White);
+        border-radius: 20px;
+        padding: 30px 40px;
+    }
+    .success-message img{
+        height: 60px;
+        width: 60px;
+        margin-bottom: 20px;
+    }
+    .success-message h2{
+        margin-bottom: 35px;
+    }
+    .success-message p{
+        color: var(--Grey);
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+}
